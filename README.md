@@ -2,7 +2,7 @@
 
 ## Usage
 
-Install NeoVim, then run
+Install **NeoVim**, then run
 
 ```bash
 mkdir -p ~/.config
