@@ -4,7 +4,7 @@ return {
   config = function()
     local chatgpt = require("chatgpt")
     chatgpt.setup({
-      api_key_cmd = "op item get OPENAI_MBAIR --fields label=password",
+      api_key_cmd = "op item get OPENAI_MBAIR --account my.1password.com --fields label=password",
     })
     vim.keymap.set(
       "n",
