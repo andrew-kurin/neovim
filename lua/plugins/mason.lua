@@ -1,5 +1,8 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
+  cmd = "Mason",
+  keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
+  build = ":MasonUpdate",
   opts = {
     ensure_installed = {
       "stylua",
@@ -7,6 +10,13 @@ return {
       "shfmt",
       "ansible-language-server",
       "ansible-lint",
+    },
+    ui = {
+      icons = {
+        package_installed = "✓",
+        package_pending = "➜",
+        package_uninstalled = "✗",
+      },
     },
   },
 }
